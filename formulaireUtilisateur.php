@@ -34,19 +34,19 @@ include 'function/mesFunctionsTable.php';
 		<input type="hidden" name="action" value="<?php echo $action;  ?>"/>
 		 <div>
         	<label for="lastname">Nom :</label>
-        	<input type="text" id="lastname" name="lastname" value="<?php echo $user['lastname'];  ?>">
+        	<input type="text" id="lastname" name="lastname" value="<?php echo $user['lastname']??'';  ?>">
 	    </div>
 	    <div>
 	        <label for="firstname">Prenom</label>
-	        <input type="text" id="prenom" name="firstname" value="<?php echo $user['firstname'];  ?>">
+	        <input type="text" id="prenom" name="firstname" value="<?php echo $user['firstname']??'';  ?>">
 	    </div>
 	    <div>
 	        <label for="email">Email:</label>
-	        <input type="text" id="email" name="email" value="<?php echo $user['email'];  ?>">
+	        <input type="text" id="email" name="email" value="<?php echo $user['email']??'';  ?>">
 	    </div>
 	    <div>
 	        <label for="password">Password :</label>
-	        <input type="text" id="password" name="password" value="<?php echo $user['password'];  ?>">
+	        <input type="text" id="password" name="password" value="<?php echo $user['password']??'';  ?>">
 	    </div>
 		<div class="button">
 			<button type="submit"><?php echo $libelle;  ?></button>

@@ -34,15 +34,15 @@ include 'function/mesFunctionsTable.php';
 		<input type="hidden" name="action" value="<?php echo $action;  ?>"/>
 		 <div>
         	<label for="name">Name :</label>
-        	<input type="text" id="lastname" name="lastname" value="<?php echo $user['name'];  ?>">
+        	<input type="text" id="lastname" name="lastname" value="<?php echo $user['name']??'';  ?>">
 	    </div>
 	    <div>
 	        <label for="domain">Domain</label>
-	        <input type="text" id="prenom" name="firstname" value="<?php echo $user['domain'];  ?>">
+	        <input type="text" id="prenom" name="firstname" value="<?php echo $user['domain']??'';  ?>">
 	    </div>
 	    <div>
 	        <label for="aliases">Aliases:</label>
-	        <input type="text" id="email" name="email" value="<?php echo $user['aliases'];  ?>">
+	        <input type="text" id="email" name="email" value="<?php echo $user['aliases']??'';  ?>">
 	    </div>
 
 		<div class="button">

@@ -35,8 +35,9 @@ function readUser($id){
 function createUser($lastname, $firstname, $email, $password){
   try {
     $con = getDatabaseConnexion();
-    $sql = "INSERT INTO user (lastname, firstname, email, password)
-        VALUES ('$lastname', '$firstname', '$email' ,'$password')";
+    $organization = 2;
+    $sql = "INSERT INTO user (lastname, firstname, email, password, idOrganization)
+        VALUES ('$lastname', '$firstname', '$email' ,'$password','$organization')";
       $con->exec($sql);
   }
     catch(PDOException $e) {
